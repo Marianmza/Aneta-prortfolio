@@ -1,0 +1,534 @@
+                                * {
+                                    box-sizing: border-box;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: 'Alegreya Sans', sans-serif;
+                                }
+                                
+                                header {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                
+                                header nav ul {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    text-align: center;
+                                }
+                                
+                                header nav ul li {
+                                    list-style: none;
+                                    display: flex;
+                                    width: 500px;
+                                    text-align: center;
+                                    justify-content: center;
+                                    background-color: #393939;
+                                    align-items: center;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                header nav ul li a {
+                                    padding: 0.75rem;
+                                    text-decoration: none;
+                                    color: #fff;
+                                    font-style: italic;
+                                    font-weight: 500;
+                                    transition: 1s ease-in-out
+                                }
+                                
+                                header nav ul li:first-child {
+                                    background-color: rgb(189, 185, 185);
+                                    font-family: fantasy;
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 25px;
+                                    text-shadow: 3px 3px #393939;
+                                }
+                                
+                                header nav ul li a .logo {
+                                    color: #54BE90;
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                }
+                                
+                                header nav ul li:hover {
+                                    background-color: #54BE90;
+                                    color: #393939;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                header nav ul li:hover a {
+                                    color: #393939;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                header .header-photo {
+                                    background: url(/photo-1470071459604-3b5ec3a7fe05.jpg) center center/cover no-repeat;
+                                    height: 600px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                }
+                                
+                                header .header-photo .header-content {
+                                    color: #fff;
+                                    text-align: center;
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    height: 600px;
+                                    padding: 0 2rem;
+                                    /* This is the overlay !!! */
+                                    position: absolute;
+                                    top: 58px;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                }
+                                
+                                header .header-photo .header-content h1 {
+                                    font-size: 50px;
+                                    margin-bottom: 40px;
+                                }
+                                
+                                .text-primary {
+                                    color: #54BE90
+                                }
+                                
+                                header .header-photo .header-content p {
+                                    font-size: 30px;
+                                    font-style: italic;
+                                }
+                                
+                                .first-section {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    text-align: center;
+                                    align-items: center;
+                                }
+                                
+                                .first-section .how-i-work {
+                                    text-align: center;
+                                    padding: 2rem 8rem;
+                                }
+                                
+                                .first-section .how-i-work p {
+                                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                    padding: 2rem;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    height: 200px;
+                                }
+                                
+                                .first-section .first-section-second-one {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #393939;
+                                    color: #fff;
+                                    height: 300px;
+                                }
+                                
+                                .first-section .first-section-second-one .circle {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                    background-color: #fff;
+                                    margin-bottom: 20px;
+                                }
+                                
+                                .first-section .first-section-second-one p {
+                                    padding: 2rem 6rem;
+                                }
+                                
+                                .first-section .first-section-second-one>div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-top: -130px;
+                                    height: 400px;
+                                }
+                                /* MY SKILLS SECTION */
+                                
+                                #skills {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                
+                                #skills h2 {
+                                    font-size: 40px;
+                                    margin: 4rem 0 2rem 0;
+                                    letter-spacing: 2px;
+                                }
+                                
+                                #skills .chart {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 65%;
+                                    margin-bottom: 70px;
+                                }
+                                
+                                #skills .chart .chart-line {
+                                    height: 30px;
+                                    display: flex;
+                                    width: 100%;
+                                    text-align: center;
+                                    justify-content: space-between;
+                                    align-content: center;
+                                    background-color: #54BE90;
+                                    margin-bottom: 10px;
+                                }
+                                
+                                #skills .chart .chart-line .chart-line-black {
+                                    flex-basis: 15%;
+                                    text-align: center;
+                                    padding: 5px;
+                                    background-color: #393939;
+                                    color: #fff;
+                                    font-family: Georgia, 'Times New Roman', Times, serif;
+                                }
+                                
+                                #skills .chart .chart-line .chart-line-gray {
+                                    flex-basis: 20%;
+                                    background-color: #D5D7D2;
+                                    text-align: right;
+                                    color: #888F97;
+                                    padding: 5px;
+                                }
+                                
+                                #skills .chart .chart-line .chart-line-seventy {
+                                    flex-basis: 30%;
+                                }
+                                
+                                #skills .chart .chart-line .chart-line-sixty {
+                                    flex-basis: 40%;
+                                }
+                                
+                                #skills .chart .chart-line .chart-line-fifty {
+                                    flex-basis: 50%;
+                                }
+                                /* Porfolio Section */
+                                
+                                #portfolio {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #54BE90;
+                                    height: 900px;
+                                }
+                                
+                                #portfolio h2 {
+                                    color: #fff;
+                                    font-size: 60px;
+                                    margin: 2rem 0 2rem 0;
+                                }
+                                
+                                #portfolio .portfolio-present {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    width: 90%;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item {
+                                    width: 30%;
+                                    height: 300px;
+                                    background-color: #D5D7D2;
+                                    margin: 1rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 10px #fff solid;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item .portfolio-present-item-pic {
+                                    height: 50%;
+                                    width: 100%;
+                                    background: url(/placeholder-1-e1533569576673-960x960.png) center center/cover no-repeat;
+                                    border-bottom: 10px #fff solid;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item .portfolio-present-item-description {
+                                    padding: 20px 20px 0 20px;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item .portfolio-present-item-description .portfolio-present-item-hover-btn {
+                                    background-color: #54BE90;
+                                    color: #fff;
+                                    transition: 1s ease-in-out;
+                                    padding: 0;
+                                    font-size: 1px;
+                                    letter-spacing: 0px;
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    font-weight: 100;
+                                    visibility: hidden;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item:hover {
+                                    border: 10px #393939 solid;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item:hover .portfolio-present-item-hover-btn {
+                                    padding: 0.5rem 7rem;
+                                    font-size: 20px;
+                                    letter-spacing: 2px;
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    font-weight: 800;
+                                    visibility: visible;
+                                    transition: 1s ease-in-out;
+                                    border-radius: 20px;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item:hover h3 {
+                                    visibility: hidden;
+                                    font-size: xx-small;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                #portfolio .portfolio-present .portfolio-present-item:hover .portfolio-present-item-pic {
+                                    border-bottom: 10px #393939 solid;
+                                    transition: 1s ease-in-out;
+                                }
+                                /* About me  */
+                                
+                                #about {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    background-color: #D5D7D2;
+                                    height: 600px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+                                
+                                #about h2 {
+                                    color: #393939;
+                                    font-size: 60px;
+                                    padding: 3rem;
+                                }
+                                
+                                #about .about {
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                }
+                                
+                                #about .about .about-description {
+                                    width: 50%;
+                                    height: 300px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    line-height: 1.3;
+                                }
+                                
+                                #about .about .about-description .u {
+                                    border-bottom: 4px #54BE90 solid;
+                                }
+                                
+                                #about .about .about-pic {
+                                    width: 50%;
+                                    height: 300px;
+                                    text-align: center;
+                                }
+                                
+                                #about .about .about-pic img {
+                                    height: 300px;
+                                    width: 300px;
+                                    border-radius: 50%;
+                                }
+                                
+                                #about .about .about-description .about-des-item {
+                                    margin: 0.75rem;
+                                    text-align: left;
+                                }
+                                
+                                #about .about .about-description .about-btn {
+                                    align-self: center;
+                                    padding: 0.3rem 5rem;
+                                    font-size: 20px;
+                                    letter-spacing: 2px;
+                                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                    font-weight: 800;
+                                    border-radius: 20px;
+                                    background-color: #54BE90;
+                                    color: #fff;
+                                    box-shadow: 5px 10px #888888;
+                                    ;
+                                }
+                                /* find-me */
+                                
+                                #find-me {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    background-color: #393939;
+                                    height: 350px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    color: #fff;
+                                    padding: 2rem;
+                                }
+                                
+                                #find-me h2 {
+                                    font-size: 40px;
+                                    padding: 3rem;
+                                    letter-spacing: 3px;
+                                }
+                                
+                                #find-me .find-me-social {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 40%;
+                                    margin-bottom: 2rem;
+                                }
+                                
+                                #find-me .find-me-social .find-me-social-item {
+                                    margin: 0 2rem;
+                                    text-decoration: none;
+                                    color: #fff;
+                                }
+                                /* Contact me */
+                                
+                                #contact {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    background-color: #54BE90;
+                                    height: 600px;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    color: #fff;
+                                    padding: 2rem;
+                                }
+                                
+                                #contact h2 {
+                                    font-size: 60px;
+                                    padding: 3rem;
+                                    letter-spacing: 3px;
+                                }
+                                
+                                #contact .contact-form {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    width: 50%;
+                                }
+                                
+                                #contact .contact-form .contact-input {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-wrap: wrap;
+                                    width: 100%;
+                                }
+                                
+                                #contact .contact-form .contact-input input {
+                                    width: 45%;
+                                    margin: 0.7rem 0.1rem 0 0;
+                                    border: none;
+                                    color: #D5D7D2;
+                                }
+                                
+                                #contact .contact-form .contact-form-item {
+                                    margin-bottom: 1rem;
+                                }
+                                
+                                #contact .contact-form .contact-form-item label {
+                                    color: #fff;
+                                    font-size: 20px;
+                                    font-style: italic;
+                                }
+                                
+                                #contact .contact-form .contact-text-area {
+                                    width: 100%;
+                                    text-align: center;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+                                
+                                #contact .contact-form .contact-text-area textarea {
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                
+                                #contact .contact-form .contact-send-btn {
+                                    width: 100%;
+                                    background-color: #393939;
+                                    padding: 0.5rem;
+                                    color: #fff;
+                                    font-size: 20px;
+                                    border-radius: 5px;
+                                }
+                                
+                                #contact .contact-form .contact-input input[type=text] {
+                                    background-color: #54BE90;
+                                    border-bottom: #D5D7D2 2px solid;
+                                }
+                                
+                                #contact .contact-form .contact-input input[type=email] {
+                                    background-color: #54BE90;
+                                    border-bottom: #D5D7D2 2px solid;
+                                }
+                                
+                                 ::placeholder {
+                                    color: #fff;
+                                    font-size: 20px;
+                                    font-style: italic;
+                                }
+                                /* footer */
+                                
+                                footer {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 400px;
+                                    padding: 2rem;
+                                    font-family: 'Alegreya Sans', sans-serif;
+                                    font-weight: bolder;
+                                }
+                                
+                                footer .foot-first-div {
+                                    display: flex;
+                                    width: 100%;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-bottom: 3rem;
+                                }
+                                
+                                footer .foot-first-div h2 {
+                                    font-size: 50px;
+                                    margin: 0 3rem;
+                                }
+                                
+                                footer .foot-first-div .foot-line {
+                                    background-color: #54BE90;
+                                    width: 30%;
+                                    height: 10px;
+                                }
+                                
+                                footer .find-me-socialtwo a {
+                                    margin-left: 2rem;
+                                    color: #D5D7D2;
+                                }
+                                
+                                footer .find-me-socialtwo {
+                                    margin-bottom: 3rem;
+                                }
+                                
+                                footer p {
+                                    font-size: 20px;
+                                }
